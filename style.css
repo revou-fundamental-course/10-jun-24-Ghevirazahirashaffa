@@ -1,0 +1,56 @@
+
+
+
+
+
+body{
+    background-color: #acbfea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container1 {
+    max-width: 850px;
+    background: #c8d5f6;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px honeydew;
+    padding: 10px;
+}
+
+.container2 {
+    max-width: 400px;
+    background: #c8d5f6;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px honeydew;
+    padding: 50px;
+}
+
+textarea {
+    width: 200px;
+    height: 10px;
+    padding: 50px;
+    border-radius:8px ;
+    font-size: xx-large
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+
+}
+
+.temperatur-icon {
+    font-size: 45px;
+    color: aliceblue;
+}
+
+    
+    
+
+ 

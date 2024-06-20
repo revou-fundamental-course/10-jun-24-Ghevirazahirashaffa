@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>kalkulator suhu</title>
+
+  <meta name="viewport" content="purple">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+        body {
+          box-sizing: border-box;
+          min-width: 200px;
+          max-width: 980px;
+          margin: 0 auto;
+          padding: 45px;
+        }
+
+        
+      </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>  <!-- LaTeX for math thing   -->
+</head>
+
+<body>
+  
+
+  <article class="markdown-body">\
+    <div class="container1">
+    <div class="title">
+      <h1>Kalkulator Konversi Suhu</h1>
+      <span class="temperatur-icon"><i class="fa-solid fa-temperature-three-quarters"></i></span>
+      </div>
+  
+
+</div>
+  
+  <p style="font-size: 17px;">*Masukkan suhu derajat ke kotak dibawah, lalu pilih jenis konversinya dan tekan tombol konversi untuk mendapatkan hasil konversi sesuai yang di inginkan.</p>
+  
+  <div class="container2">
+    <div class="row">
+      <div class="box">
+        <label for="input-suhu">Input Suhu:</label>
+        <br>
+        <textarea type="text" id="input-suhu"></textarea>
+      </div>
+        <blockquote>
+            <div class="box">
+                <label for="jenis-konversi">Pilih Jenis Konversi:</label>
+                <br>
+                <select id="jenis-konversi">
+                  <option value="celsius-to-fahrenheit">Celsius ke Fahrenheit</option>
+                  <option value="fahrenheit-to-celsius">Fahrenheit ke Celsius</option>
+                  <option value="celsius-to-kelvin">Celsius ke Kelvin</option>
+                  <option value="kelvin-to-celsius">Kelvin ke Celsius</option>
+                  <option value="fahrenheit-to-kelvin">Fahrenheit ke Kelvin</option>
+                  <option value="kelvin-to-fahrenheit">Kelvin ke Fahrenheit</option>
+                </select>
+                <br></br>
+                <button style="background-color: rgb(137, 214, 250);" onclick="reverseKonversi()">Reverse</button>
+                <button style="background-color: rgb(62, 228, 173);" onclick="konversi()">Konversi</button>
+                <br><br>
+                <blockquote>
+          <p>
+            *Tekan "konversi" untuk melihat hasil!
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="box" >
+        <label for="output-suhu">Hasil Konversi:</label>
+        <br>
+        <textarea type="text" id="output-suhu" readonly></textarea>
+      </div>
+      <div class="box">
+        <label for="kalkulasi">Cara kalkulasi:</label>
+        <br>
+        <textarea id="kalkulasi" readonly></textarea>
+      </div>
+    </div>   
+  </div>
+
+  <h2><a id="user-content-h1" class="anchor" href="#cara-konversi" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cara Konversi</h2>
+  <div id="descRumus"></div>
+  <br>
+  <div id="rumus"></div>
+
+   
+   <script src="app.js"></script>
+</article>
+  
+</body>
+</html>
